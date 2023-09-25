@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'registro-usuario',
     loadChildren: () => import('./registro-usuario/registro-usuario.module').then( m => m.RegistroUsuarioPageModule)
   },
+  {
+    path: 'menu-opciones',
+    loadChildren: () => import('./menu-opciones/menu-opciones.module').then( m => m.MenuOpcionesPageModule)
+  },
  
 ];
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'; // Importa el servicio Router
 import { AlertController } from '@ionic/angular';
 
 @Component({
@@ -7,16 +8,18 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./inicio-sesion.page.scss'],
 })
 export class InicioSesionPage implements OnInit {
-  camposVacios: boolean = false;
-  dni: string = ''; // Declaración de la propiedad DNI
-  password: string = ''; // Declaración de la propiedad contraseña
+  dni: string = '';
+  password: string = '';
+  camposVacios: boolean = false; // Inicializa la variable camposVacios como false
 
-  constructor(private alertController: AlertController) {}
+  constructor(
+    private router: Router, // Inyecta el servicio Router
+    private alertController: AlertController
+  ) {}
 
   ngOnInit() {}
 
   async validarCampos() {
-    // Verifica si los campos están vacíos
     if (!this.dni || !this.password) {
       const alert = await this.alertController.create({
         header: 'Campos Vacíos',
@@ -26,9 +29,8 @@ export class InicioSesionPage implements OnInit {
   
       await alert.present();
     } else {
-      // Realiza otras validaciones si es necesario
-      // Si todos los campos están llenos y las validaciones pasan, continúa con el inicio de sesión.
-      // ...
+      // Si los campos están llenos, redirige al usuario a la página "menu-opciones"
+      this.router.navigate(['/menu-opciones']);
     }
   }
   

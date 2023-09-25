@@ -31,28 +31,22 @@
     <img src="https://i.pinimg.com/750x/34/30/f0/3430f09d54154dae08871818dce4abb1.jpg" />
 
     <div class="form-container">
+
       <ion-item>
         <ion-label position="stacked">Ingresar tu N° de DNI:</ion-label>
-        <ion-input required></ion-input>
+        <ion-input required [(ngModel)]="dni"></ion-input>
       </ion-item>
+      
       <ion-item>
         <ion-label position="stacked">Ingresar tu contraseña:</ion-label>
-        <ion-input type="password" required></ion-input>
+        <ion-input type="password" required [(ngModel)]="password"></ion-input>
         <ion-icon name="eye" slot="end"></ion-icon>
       </ion-item>
+      
 
       <ion-button expand="block" class="main-button" color="danger" (click)="validarCampos()">
         <ion-icon name="log-in"></ion-icon> INGRESAR
       </ion-button>
-      
-
-      <ion-alert
-        *ngIf="camposVacios"
-        header="Campos Vacíos"
-        message="Por favor, llena todos los campos."
-        buttons="OK"
-        (ionAlertDidDismiss)="camposVacios = false"
-      ></ion-alert>
 
       <div class="sign-up">
         ¿No estás registrado?
