@@ -1,5 +1,7 @@
 {
   "name": "GF_APP_FRONT",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
