@@ -48,6 +48,10 @@ const routes: Routes = [
     path: 'directorio-carreras',
     loadChildren: () => import('./directorio-carreras/directorio-carreras.module').then( m => m.DirectorioCarrerasPageModule)
   },
+  {
+    path: 'busquedad-placa',
+    loadChildren: () => import('./busquedad-placa/busquedad-placa.module').then( m => m.BusquedadPlacaPageModule)
+  },
  
 ];
 
