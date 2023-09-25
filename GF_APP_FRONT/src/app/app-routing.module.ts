@@ -23,6 +23,27 @@ const routes: Routes = [
     path: 'menu-opciones',
     loadChildren: () => import('./menu-opciones/menu-opciones.module').then( m => m.MenuOpcionesPageModule)
   },
+  {
+    path: 'recorrido',
+    loadChildren: () => import('./recorrido/recorrido.module').then( m => m.RecorridoPageModule)
+  },
+ 
+  {
+    path: 'a-estudios-generales',
+    loadChildren: () => import('./a-estudios-generales/a-estudios-generales.module').then( m => m.AEstudiosGeneralesPageModule)
+  },
+  {
+    path: 'a-especialidades',
+    loadChildren: () => import('./a-especialidades/a-especialidades.module').then( m => m.AEspecialidadesPageModule)
+  },
+  {
+    path: 'a-fia-data',
+    loadChildren: () => import('./a-fia-data/a-fia-data.module').then( m => m.AFiaDataPageModule)
+  },
+  {
+    path: 'a-laboratorios',
+    loadChildren: () => import('./a-laboratorios/a-laboratorios.module').then( m => m.ALaboratoriosPageModule)
+  },
  
 ];
 

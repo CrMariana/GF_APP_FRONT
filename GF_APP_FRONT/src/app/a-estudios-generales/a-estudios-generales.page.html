@@ -13,64 +13,27 @@
   </svg>
 
   <div class="page-header"></div>
+  <div class="ion-text-end ion-margin-end">
+    <ion-button fill="clear" [routerLink]="['/inicio-sesion']" class="custom-button"> SALIR
+    </ion-button>
+  </div>
+  
+
 
   <div class="ion-padding container">
 
-    <div class="ion-text-end ion-margin-end">
-      <ion-button fill="clear" color="danger" [routerLink]="['/inicio-sesion']" class="custom-button"> SALIR
-      </ion-button>
-    </div>
+    <h2 class="centered-text">AULAS ESTUDIOS GENERALES</h2>
+    <img src="https://i.pinimg.com/750x/78/75/a3/7875a376eefef020dbf6cc5f60d91741.jpg"
+      alt="Descripción de la primera imagen" />
 
-    <img src="https://i.pinimg.com/750x/34/30/f0/3430f09d54154dae08871818dce4abb1.jpg" />
+    <!-- Segunda imagen -->
+    <img src="https://i.pinimg.com/750x/f1/69/a7/f169a7ca33a36743e1995b74d015c302.jpg"
+      alt="Descripción de la segunda imagen" />
 
-    <!-- Grid de 4 botones cuadrados -->
-    <ion-row>
 
-      <ion-col size="6">
-        <ion-button expand="full" class="custom-button" mode="md">
-          <div style="text-align: center;">
-            <img src="https://i.pinimg.com/564x/73/a4/01/73a401fa79ee2327d9d8139adb10f497.jpg" />
-            <br />
-            RECORRE FIA
-          </div>
+      <div class="ion-text-end ion-margin-end">
+        <ion-button fill="clear" [routerLink]="['/a-especialidades']" class="custom-button1"> SIGUIENTE
         </ion-button>
-      </ion-col>
-
-      <ion-col size="6">
-        <ion-button expand="full" class="custom-button" mode="md">
-          <div style="text-align: center;">
-            <img src="https://i.pinimg.com/564x/f9/6f/bc/f96fbc595cf5f9623e18c4139fdd83d6.jpg" />
-            <br />
-            DIRECTORIO
-          </div>
-        </ion-button>
-      </ion-col>
-
-    </ion-row>
-
-    <ion-row>
-
-      <ion-col size="6">
-        <ion-button expand="full" class="custom-button" mode="md" [routerLink]="['/a-estudios-generales']">
-          <div style="text-align: center;">
-            <img src="https://i.pinimg.com/564x/b9/b6/8f/b9b68f288e150ab6610f20b29de701a8.jpg" />
-            <br />
-            AULAS DE FIA
-          </div>
-        </ion-button>
-      </ion-col>
-
-      <ion-col size="6">
-        <ion-button expand="full" class="custom-button" mode="md">
-          <div style="text-align: center;">
-            <img src="https://i.pinimg.com/564x/4a/74/5f/4a745fc9f6c3aac5bd3f3f30f83dab06.jpg" />
-            <br />
-            GRADUADOS
-          </div>
-        </ion-button>
-      </ion-col>
-
-    </ion-row>
-
+      </div>
   </div>
 </ion-content>
