@@ -44,6 +44,10 @@ const routes: Routes = [
     path: 'a-laboratorios',
     loadChildren: () => import('./a-laboratorios/a-laboratorios.module').then( m => m.ALaboratoriosPageModule)
   },
+  {
+    path: 'directorio-carreras',
+    loadChildren: () => import('./directorio-carreras/directorio-carreras.module').then( m => m.DirectorioCarrerasPageModule)
+  },
  
 ];
 

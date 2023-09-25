@@ -14,7 +14,7 @@
 
   <div class="page-header"></div>
   <div class="ion-text-end ion-margin-end">
-    <ion-button fill="clear" [routerLink]="['/inicio-sesion']" class="custom-button"> SALIR
+    <ion-button fill="clear" [routerLink]="['/menu-opciones']" class="custom-button"> Volver al Menu
     </ion-button>
   </div>
   
@@ -30,10 +30,14 @@
     <img src="https://i.pinimg.com/750x/04/ae/2e/04ae2e4c161db3dc2d0aa547a14ab346.jpg"
       alt="Descripción de la segunda imagen" />
 
-
-      <div class="ion-text-end ion-margin-end">
-        <ion-button fill="clear" [routerLink]="['/a-fia-data']" class="custom-button1"> SIGUIENTE
-        </ion-button>
-      </div>
+      <ion-row>
+        <ion-col size="6" class="ion-text-start">
+          <ion-button fill="clear" [routerLink]="['/a-estudios-generales']" class="custom-button1"> REGRESAR </ion-button>
+        </ion-col>
+        <ion-col size="6" class="ion-text-end">
+          <ion-button fill="clear" [routerLink]="['/a-fia-data']" class="custom-button1"> SIGUIENTE </ion-button>
+        </ion-col>
+      </ion-row>
+      
   </div>
 </ion-content>

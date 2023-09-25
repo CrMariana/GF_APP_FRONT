@@ -14,26 +14,33 @@
 
   <div class="page-header"></div>
   <div class="ion-text-end ion-margin-end">
-    <ion-button fill="clear" [routerLink]="['/inicio-sesion']" class="custom-button"> SALIR
+    <ion-button fill="clear" [routerLink]="['/menu-opciones']" class="custom-button"> Volver al Menu
     </ion-button>
   </div>
-  
+
 
 
   <div class="ion-padding container">
 
     <h2 class="centered-text">AULAS FIA-DATA</h2>
-    <img src="https://scontent.flim16-1.fna.fbcdn.net/v/t1.6435-9/67316087_1998489233585921_3069883812470063104_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=lfnRTeBhYckAX9o08kl&_nc_ht=scontent.flim16-1.fna&cb_e2o_trans=q&oh=00_AfCuI5t2Hmp0ew8Nh10qB0Sabrlc6QIs34Bp9dnCVyrEPA&oe=653844AA"
+    <img
+      src="https://scontent.flim16-1.fna.fbcdn.net/v/t1.6435-9/67316087_1998489233585921_3069883812470063104_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=lfnRTeBhYckAX9o08kl&_nc_ht=scontent.flim16-1.fna&cb_e2o_trans=q&oh=00_AfCuI5t2Hmp0ew8Nh10qB0Sabrlc6QIs34Bp9dnCVyrEPA&oe=653844AA"
       alt="Descripción de la primera imagen" />
 
     <!-- Segunda imagen -->
-    <img src="https://scontent.flim16-1.fna.fbcdn.net/v/t1.6435-9/67260779_1998489350252576_8422157780550418432_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=hD3qqE-Wy7EAX-NB6fB&_nc_ht=scontent.flim16-1.fna&cb_e2o_trans=q&oh=00_AfAJKKUbBZc1YCg1e1nZD_MRoSGUlNxFbSxrRqVsS4aKvA&oe=65385312"
+    <img
+      src="https://scontent.flim16-1.fna.fbcdn.net/v/t1.6435-9/67260779_1998489350252576_8422157780550418432_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=hD3qqE-Wy7EAX-NB6fB&_nc_ht=scontent.flim16-1.fna&cb_e2o_trans=q&oh=00_AfAJKKUbBZc1YCg1e1nZD_MRoSGUlNxFbSxrRqVsS4aKvA&oe=65385312"
       alt="Descripción de la segunda imagen" />
 
 
-      <div class="ion-text-end ion-margin-end">
-        <ion-button fill="clear" [routerLink]="['/a-laboratorios']" class="custom-button1"> SIGUIENTE
-        </ion-button>
-      </div>
+    <ion-row>
+      <ion-col size="6" class="ion-text-start">
+        <ion-button fill="clear" [routerLink]="['/a-especialidades']" class="custom-button1"> REGRESAR </ion-button>
+      </ion-col>
+      <ion-col size="6" class="ion-text-end">
+        <ion-button fill="clear" [routerLink]="['/a-laboratorios']" class="custom-button1"> SIGUIENTE </ion-button>
+      </ion-col>
+    </ion-row>
+
   </div>
 </ion-content>
